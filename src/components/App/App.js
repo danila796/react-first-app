@@ -9,19 +9,22 @@ const App = () => {
 
     const items = [
         {
-            value: 'Написать новое приложение'
+            value: 'Написать новое приложение',
+            isDone: true
         },
         {
-            value: 'Почистить зубы'
+            value: 'Почистить зубы',
+            isDone: false
         },
         {
-            value: 'Лечь спать'
+            value: 'Лечь спать',
+            isDone: false
         }
     ]
 
     return (
-        <div className={styles.wrap}>
-            <h1 className={styles.title}>Важные дела:</h1>
+        <div className={ styles.wrap }>
+            <h1 className={ styles.title }>Важные дела:</h1>
             <InputItem />
             <ItemList items = { items } />
             <Footer count = { count }/>
